@@ -9,8 +9,6 @@ icon.ico           optional: the app's bundled icon
 screens/           screenshots shown by Package Store
 ```
 
-The first two examples are the reference packages from Grimoire's own test suite. They
-are intentionally small and safe to install while checking a new store deployment.
 
 For a real package, publish its source in another repository and keep these contents in
 step with a tagged release. Point the catalog entry's `repository` at that source
