@@ -3,8 +3,67 @@
   "name": "Grimoire Package Store",
   "tagline": "Apps and widgets made for Grimoire.",
   "updated": "2026-11-22",
-  "featured": "com.example.fixture",
+  "featured": "com.nebuff.wordle",
   "packages": [
+    {
+      "id": "com.nebuff.wordle",
+      "name": "Gri Wordle",
+      "version": "1.1.0",
+      "type": "app",
+      "author": "nebuff",
+      "category": "Games",
+      "summary": "A daily Wordle with a six-guess board, a full-screen keyboard and saved progress.",
+      "description": "Gri Wordle is a full-screen daily word game for Grimoire. Guess a five-letter word in six tries using the app's own keyboard; the board and keyboard mark letters in the right place and letters found elsewhere. The answer comes from the public daily Wordle endpoint, so the puzzle changes each day. Guesses and the result are saved in the app's own storage, and the two-finger system gesture returns Home. The app needs network access for the daily word and app-local storage for progress.",
+      "license": "Apache-2.0",
+      "repository": "https://github.com/nebuff/gri-wordle",
+      "manifest": "packages/com.nebuff.wordle/package.yaml",
+      "icon": "packages/com.nebuff.wordle/store-icon.ico",
+      "screenshots": [
+        "packages/com.nebuff.wordle/screens/01-board.png"
+      ],
+      "tags": ["wordle", "word game", "daily", "puzzle", "games"],
+      "added": "2026-11-22"
+    },
+    {
+      "id": "com.grimoire.calculator",
+      "name": "Calculator",
+      "version": "1.2.0",
+      "type": "widget",
+      "author": "Nebuff",
+      "category": "Productivity",
+      "summary": "Three calculators in one resizable widget, plus unit conversion.",
+      "description": "Calculator packs three tools into one resizable Grimoire widget. Simple mode handles everyday arithmetic with percent, sign change and decimal input. Scientific mode evaluates expressions with parentheses, trigonometry, logarithms, roots, powers, π and e. Programming mode works in decimal, hexadecimal, binary and octal with bitwise operations and shifts, and adds a converter for length, mass, data and temperature. Each mode keeps its own display, while settings choose the default mode and which modes the mode bar offers.",
+      "license": "MIT",
+      "repository": "https://github.com/grimoire-notes/gri-calc",
+      "manifest": "packages/com.grimoire.calculator/package.yaml",
+      "icon": "packages/com.grimoire.calculator/icon.ico",
+      "screenshots": [
+        "packages/com.grimoire.calculator/screens/01-simple.png",
+        "packages/com.grimoire.calculator/screens/02-scientific.png",
+        "packages/com.grimoire.calculator/screens/03-converter.png"
+      ],
+      "tags": ["calculator", "scientific", "programming", "unit converter", "productivity"],
+      "added": "2026-11-22"
+    },
+    {
+      "id": "com.nebuff.hiragana",
+      "name": "Hiragana Chart",
+      "version": "1.0.1",
+      "type": "widget",
+      "author": "Nebuff",
+      "category": "Language",
+      "summary": "A compact hiragana reference with gojūon, dakuten and handakuten.",
+      "description": "Hiragana Chart is a fixed-size reference widget for reading and writing Japanese. Its basic panel lays out all 46 gojūon kana in five vowel columns, including the gaps in the や and わ rows and ん on its own row. The dakuten and handakuten panel adds the が, ざ, だ and ば rows, the ぱ row, and a short ゛/゜ reminder. Every cell shows the kana above its romanization. It has no settings or saved state, so it is ready as soon as it opens beside your notes.",
+      "license": "MIT",
+      "repository": "https://github.com/nebuff/gri-hira",
+      "manifest": "packages/com.nebuff.hiragana/package.yaml",
+      "icon": "packages/com.nebuff.hiragana/icon.ico",
+      "screenshots": [
+        "packages/com.nebuff.hiragana/screens/01-chart.png"
+      ],
+      "tags": ["japanese", "hiragana", "language", "reference", "chart"],
+      "added": "2026-11-22"
+    },
     {
       "id": "com.example.fixture",
       "name": "Fixture App",

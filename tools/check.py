@@ -48,11 +48,14 @@ def check_package(entry, seen):
     if pid in seen:
         errors.append(f"duplicate package id: {pid}")
     seen.add(pid)
-    for key in ("name", "version", "author", "summary", "description", "license", "repository", "manifest"):
+    for key in ("name", "version", "author", "summary", "description", "license", "repository", "manifest", "icon"):
         if not isinstance(entry.get(key), str) or not entry[key].strip():
             errors.append(f"{pid}: missing {key}")
     if kind not in ("app", "widget"):
         errors.append(f"{pid}: type must be app or widget")
+    shots = entry.get("screenshots")
+    if not isinstance(shots, list) or not shots:
+        errors.append(f"{pid}: at least one screenshot is required")
     manifest = local_path(entry.get("manifest"))
     if manifest is None:
         return errors

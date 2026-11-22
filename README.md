@@ -25,11 +25,13 @@ unchanged from `raw.githubusercontent.com`, a branch, or a local mirror. Absolut
 1. Put the complete package in `packages/<id>/`: its `package.yaml`, artifact, optional
    `.ico` and one or more screenshots.
 2. Add an entry to the `packages` array in `index.json`.
-3. Keep the entry's `id`, `name`, `version`, `type` and `author` in step with the
+3. Give the entry an `icon` (a bundled image or a built-in name) and at least one
+   `screenshots` path; both are required by the catalog schema.
+4. Keep the entry's `id`, `name`, `version`, `type` and `author` in step with the
    manifest. Package Store checks the manifest's id against the entry before installing.
-4. Run `python3 tools/check.py` from this repository to validate the catalog, the
+5. Run `python3 tools/check.py` from this repository to validate the catalog, the
    relative paths, each manifest and every SHA-256 and size.
-5. Commit and push. Package Store's **Refresh** button fetches the new catalog.
+6. Commit and push. Package Store's **Refresh** button fetches the new catalog.
 
 Screenshots should show the app or widget in use, not a title card. Use grayscale or
 low-colour images at 1200–1800 px wide; Grimoire converts them to e-ink gray.
