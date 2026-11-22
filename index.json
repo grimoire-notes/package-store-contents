@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "name": "Grimoire Package Store",
+  "tagline": "Apps and widgets made for Grimoire.",
+  "updated": "2026-11-22",
+  "featured": "com.example.fixture",
+  "packages": [
+    {
+      "id": "com.example.fixture",
+      "name": "Fixture App",
+      "version": "1.0.0",
+      "type": "app",
+      "author": "Grimoire tests",
+      "category": "Examples",
+      "summary": "A tiny full-screen app for trying the Store and the app host.",
+      "description": "Fixture App is the reference app package used by Grimoire's tests. It draws a small full-screen page, has a settings page, and returns Home through its own close API. It is a safe first install for checking that Package Store, the app launcher, icons and installation all work on your device.",
+      "license": "MIT",
+      "repository": "https://github.com/grimoire-notes/package-store-contents",
+      "manifest": "packages/com.example.fixture/package.yaml",
+      "icon": "packages/com.example.fixture/icon.ico",
+      "screenshots": [
+        "packages/com.example.fixture/screens/01-app.png"
+      ],
+      "tags": ["example", "full-screen", "starter"],
+      "added": "2026-11-22"
+    },
+    {
+      "id": "com.example.timer",
+      "name": "Timer",
+      "version": "1.0.0",
+      "type": "widget",
+      "author": "Jane Doe",
+      "category": "Productivity",
+      "summary": "A small timer widget with seconds and a compact or large layout.",
+      "description": "Timer is the reference widget package used by Grimoire's tests. It shows how a widget declares its size, its settings and its icon. Open it from the editor's widget menu after installing it from the Store.",
+      "license": "MIT",
+      "repository": "https://github.com/grimoire-notes/package-store-contents",
+      "manifest": "packages/com.example.timer/package.yaml",
+      "icon": "package",
+      "screenshots": [
+        "packages/com.example.timer/screens/01-widget.png"
+      ],
+      "tags": ["timer", "productivity", "example"],
+      "added": "2026-11-22"
+    }
+  ]
+}
