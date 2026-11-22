@@ -22,6 +22,17 @@ unchanged from `raw.githubusercontent.com`, a branch, or a local mirror. Absolut
 
 ## Publishing a package
 
+### Too publish your Package
+Open a Pull Request with your Package Added, We will run tests and verification if it passes. It will be added.
+
+### Too update your Package
+We will verify you are the developer of the Package, you must link too a repo you own (Including repo's from organizations) and we will verify and update your package
+Open a PR with the updated package, We will run tests and verification if it passes. It will be added.
+
+## Too remove your Package
+We will verify you are the developer of the Package, you must link too a repo you own (Including repo's from organizations) and we will verify and update your package
+Open a PR with the package removed, We will run tests and verification if it passes. It will be added.
+
 1. Put the complete package in `packages/<id>/`: its `package.yaml`, artifact, optional
    `.ico` and one or more screenshots.
 2. Add an entry to the `packages` array in `index.json`.
@@ -29,7 +40,7 @@ unchanged from `raw.githubusercontent.com`, a branch, or a local mirror. Absolut
    manifest. Package Store checks the manifest's id against the entry before installing.
 4. Run `python3 tools/check.py` from this repository to validate the catalog, the
    relative paths, each manifest and every SHA-256 and size.
-5. Commit and push. Package Store's **Refresh** button fetches the new catalog.
+5. Commit and PR.
 
 Screenshots should show the app or widget in use, not a title card. Use grayscale or
 low-colour images at 1200–1800 px wide; Grimoire converts them to e-ink gray.
