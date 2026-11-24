@@ -3,7 +3,10 @@
   "name": "Grimoire Package Store",
   "tagline": "Apps and widgets made for Grimoire.",
   "updated": "2026-11-22",
-  "featured": ["com.nebuff.wordle", "com.grimoire.calculator"],
+  "featured": [
+    "com.nebuff.wordle",
+    "com.grimoire.calculator",
+  ],
   "packages": [
     {
       "id": "com.nebuff.wordle",
