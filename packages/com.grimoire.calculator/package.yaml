@@ -1,7 +1,7 @@
 name: Calculator
 id: com.grimoire.calculator
 type: widget
-version: 1.2.0
+version: 1.2.1
 author: Nebuff
 description: Simple, scientific and programming calculators, with a unit converter.
 license: MIT
@@ -12,7 +12,7 @@ artifact:
   path: calculator.bin
   sha256: cbdded0a54dfea3029f85dfe92ecb016dfd4ebe5be9f08ab55c15309269f42cb
   size: 106958
-capabilities: []
+capabilities: [editor:overlay, storage:widget-local]
 settings:
   - key: default_calculator
     label: Default calculator
